@@ -16,6 +16,7 @@ h2 {
 
 h3 {
     font-size: 2vw;
+    font-weight: 400;
 }
 
 main {
@@ -25,25 +26,35 @@ main {
 button {
     border: none;
     outline: none;
-    background-color: white;
-}
-
-.intro {
-    margin-bottom: 5%;
-}
-
-#contact-btn {
-    height: 50px;
-    width: 125px;
-    color: white;
-    background-color: #fa7362;
-    border-radius: 8px;
-    font-size: 20px;
     font-weight: 700;
 }
 
-#contact-btn:hover {
-    color: #f2f2f2;
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.intro {
+    margin-bottom: 2.5em;
+}
+
+.mail-btn {
+    padding: 10px;
+    height: 50px;
+    width: 125px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #fa7362;
+    background-color: #f2f2f2;
+}
+
+.mail-btn, img {
+    transition: .3s ease-in-out;
+}
+
+.mail-btn:hover {
+    color: white;
+    background-color: #fa7362;
 }
 
 /* Temp fix for img size */
@@ -111,5 +122,11 @@ img:hover {
     
     h3 {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 15% 10%;
     }
 }
