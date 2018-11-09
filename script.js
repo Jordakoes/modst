@@ -1,18 +1,5 @@
-// var app = document.getElementById('heading-accentcolor');
-// var typewriter = new Typewriter(heading-accentcolor, {
-//     loop: false
-// });
-
-// typewriter.typeString('Designer')
-// .pauseFor(1500)
-// .deleteAll()
-// .typeString('Developer')
-// .pauseFor(1500)
-// .deleteAll()
-// .typeString('Prototyper')
-// .pauseFor(1500)
-// .start()
-
+// TODO: Change id='app' to something descriptive
+// FIXME: Slows down over time..
 var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
@@ -20,11 +7,11 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter.typeString('Design')
-    .pauseFor(2500)
+   // .pauseFor(1000)
     .deleteAll()
     .typeString('Development')
-    .pauseFor(2500)
+    //.pauseFor(1000)
     .deleteAll()
     .typeString('Deployment')
-    .pauseFor(2500)
+    //.pauseFor(1000)
     .start();

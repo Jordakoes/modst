@@ -6,17 +6,20 @@ html, body {
 }
 
 h1 {
-    font-size: 7vw;
+    font-size: 5vw;
     margin: 0;
 }
 
 h2 {
     font-size: 3vw;
-    
+}
+
+h3 {
+    font-size: 2vw;
 }
 
 main {
-    margin: 50px;
+    margin: 5% 10%;
 }
 
 button {
@@ -25,35 +28,43 @@ button {
     background-color: white;
 }
 
+.intro {
+    margin-bottom: 5%;
+}
+
 #contact-btn {
-    height: 75px;
-    width: 200px;
+    height: 50px;
+    width: 125px;
     color: white;
-    background-color: #ff8640;
+    background-color: #fa7362;
     border-radius: 8px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 #contact-btn:hover {
     color: #f2f2f2;
-
 }
 
 /* Temp fix for img size */
 img {
-    height: 500px;
-    width: 500px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+img:hover {
+    opacity: .7;
 }
 
 #portfolio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        justify-items: stretch;
-        align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: "flickpick jordakoes";
 }
 
 .flickpick, .jordakoes {
@@ -62,12 +73,43 @@ img {
     justify-content: center;
 }
 
+.flickpick {
+    grid-area: flickpick;
+}
+.jordakoes {
+    grid-area: jordakoes;
+}
+
 /* Typewriter styling */
 .Typewriter__wrapper{
     font-weight: bold;
-    color: #F02B67;
+    color: #fa7362;
 }
 /* Removing the cursor */
 .Typewriter__cursor{
     display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    #portfolio {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "flickpick"
+        "jordakoes";
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
 }
