@@ -96,9 +96,8 @@ img:hover {
     font-weight: bold;
     color: #fa7362;
 }
-/* Removing the cursor */
 .Typewriter__cursor{
-    display: none;
+    color: #202020;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -129,4 +128,8 @@ img:hover {
     main {
         margin: 15% 10%;
     }
+
+    /* #app {
+        font-size: 4vw;
+    } */
 }
