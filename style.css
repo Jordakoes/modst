@@ -3,6 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    /* Transition for the dark theme */
+    transition: .3s ease-in-out;
 }
 
 /* Header text regular */
@@ -109,6 +111,25 @@ img:hover {
 }
 .Typewriter__cursor{
     color: #202020;
+}
+
+/* Darkmode test */
+.dark {
+    background-color: #111517;
+    transition: .3s ease-in-out;
+}
+
+.dark-text {
+    color: #f2f2f2;
+    transition: .3s ease-in-out;
+}
+
+.dark-btn {
+    background-color: #202020;
+}
+
+.dark-cursor {
+    color: #f2f2f2;
 }
 
 @media only screen and (max-width: 1200px) {
