@@ -108,6 +108,7 @@ img:hover {
     padding: 50px;
     background-color: #f2f2f2;
     border-radius: 8px;
+    transition: .3s ease-in-out;
 }
 
 /* Typewriter styling */
@@ -140,6 +141,7 @@ img:hover {
 
 .dark-portfolio-bg {
     background-color: #202020;
+    transition: .3s ease-in-out;
 }
 
 /* Styling of the dark switch */
