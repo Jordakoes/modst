@@ -132,6 +132,50 @@ img:hover {
     color: #f2f2f2;
 }
 
+/* Styling of the dark switch */
+#switch {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .switch-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    background-color: #f2f2f2;
+  }
+
+  .toggle {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #fc7422;
+    position: absolute;
+    left: 3px;
+    transition: 0.5s all ease;
+  }
+
+  #switch:checked ~ .switch-label {
+    transition: 0.5s all ease;
+    background: #eb008c;
+    border: none;
+  }
+  #switch:checked ~ .switch-label .toggle {
+    height: 12.5px;
+    transform: scale(0.9) translateX(50px) rotate(90deg);
+    transition: 0.7s all ease;
+    border-radius: 25px 25px 0 0;
+    background: transparent;
+    box-shadow: 0px -6px 0 0 white;
+  }
+
 @media only screen and (max-width: 1200px) {
     #portfolio {
         grid-template-columns: 1fr;
