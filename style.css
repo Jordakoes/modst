@@ -39,11 +39,10 @@ a {
 }
 
 .mail-btn {
-    padding: 10px;
-    height: 50px;
-    width: 125px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 2vw;
+    padding: 1vw;
+
     color: #fa7362;
     background-color: #f2f2f2;
 }
@@ -55,6 +54,12 @@ a {
 .mail-btn:hover {
     color: white;
     background-color: #fa7362;
+}
+
+.recent-work {
+    color: slategray;
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 /* Temp fix for img size */
@@ -87,6 +92,7 @@ img:hover {
 .flickpick {
     grid-area: flickpick;
 }
+
 .jordakoes {
     grid-area: jordakoes;
 }
@@ -107,9 +113,6 @@ img:hover {
         "flickpick"
         "jordakoes";
     }
-}
-
-@media only screen and (max-width: 800px) {
     h1 {
         font-size: 50px;
         margin: 0;
@@ -122,6 +125,11 @@ img:hover {
     h3 {
         font-size: 30px;
     }
+
+    .mail-btn {
+        font-size: 30px;
+        padding: 1vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -129,7 +137,7 @@ img:hover {
         margin: 15% 10%;
     }
 
-    /* #app {
-        font-size: 4vw;
-    } */
+    .mail-btn {
+        padding: 2vw;
+    }
 }
