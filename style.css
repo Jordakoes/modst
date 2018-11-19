@@ -97,7 +97,16 @@ img:hover {
 .jordakoes a, .flickpick a {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: start; */
+    /* Fix for centering the smaller
+    portfolios */
+    height: 100%;
+}
+
+.test { 
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .flickpick {
