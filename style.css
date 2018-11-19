@@ -138,9 +138,9 @@ img:hover {
     font-size: 30px;
 }
 
-/* .design, .deploy {
+.design, .deploy {
     text-align: end;
-} */
+}
 
 /* Typewriter styling */
 .Typewriter__wrapper{
