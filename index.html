@@ -22,8 +22,12 @@
     <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="images/favicon_orange.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon_orange.png" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- AOS Scrolling -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <title>Modst</title>
 </head>
@@ -38,24 +42,46 @@
 
         <div class="intro">
             <h1><span class="reg">Hello, we are</span> Modst. <br> <span id="app"></span> </h1>
-            <h3>And we're just trying to make the internet <br> a simple but clean place.</h3>
-            <a class="mail-btn" href="mailto:contact.modst@gmail.com?subject=Hello">Get started</a>
+            <h3>We create simple, clean and minimal webpages <br> for a <span class="bold">Modst</span> price.</h3>
+            <a class="mail-btn" href="mailto:contact.modst@gmail.com?subject=*Your company*">Get started</a>
         </div>
 
         <p class="recent-work">Recent projects</p>
 
         <div id="portfolio">
-            <div class="flickpick">
+            <div class="flickpick animation-settings animated fadeInUp">
                 <a href="https://flickpick.xyz/" target="blank_">
                     <img src="images/fullscreen_flickpick.png" title="Our movie generator">
                 </a>
             </div>
-            <div class="jordakoes">
+            <div class="jordakoes animation-settings animated fadeInUp">
                 <a href="https://jordakoes.github.io/" target="blank_">
                     <img src="images/fullscreen_jordakoes.png" title="Jordi's socials">
                 </a>
             </div>
         </div>
+
+        <div id="process">
+                <h2>How we work</h2>
+                <div class="discuss" data-aos="fade-right">
+                    <h3 class="brand-color">Discuss</h3>
+                    <p>Discussing different ideas <br> from both parties.</p>
+                </div>
+                <div class="design" data-aos="fade-left">
+                    <h3 class="brand-color">Design</h3>
+                    <p>Discussing different ideas <br> from both parties.</p>
+                </div>
+                <div class="develop" data-aos="fade-right">
+                    <h3 class="brand-color">Develop</h3>
+                    <p>Discussing different ideas <br> from both parties.</p>
+                </div>
+                <div class="deploy" data-aos="fade-left">
+                    <h3 class="brand-color">Deploy</h3>
+                    <p>Discussing different ideas <br> from both parties.</p>
+                </div>
+                
+        </div>
+
         <footer>
             <h2>Let's work together</h2>
             <!-- <h3>Shoot your awesome idea into our inbox <br> and we'll check it out asap</h3> -->            <h3>Send us an email with your ideas <br> and we'll get back to you asap!</h3>
@@ -64,6 +90,12 @@
         </footer>
     </main>
 
+    <!-- Personal js -->
     <script src="script.js"></script>
+    <!-- AOS Scrolling -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
