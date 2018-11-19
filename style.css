@@ -31,7 +31,7 @@ h3 {
 }
 
 main {
-    margin: 5% 10%;
+    margin: 10% 20%;
 }
 
 button {
@@ -51,7 +51,7 @@ a {
 
 .mail-btn {
     border-radius: 8px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 1vw;
 
     color: #fc7422;
