@@ -27,8 +27,8 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- AOS Scrolling -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
     <title>Modst</title>
 </head>
 <body>
@@ -49,37 +49,36 @@
         <p class="recent-work">Recent projects</p>
 
         <div id="portfolio">
-            <div class="flickpick animation-settings animated fadeInUp">
+            <div class="flickpick animated fadeInUp">
                 <a href="https://flickpick.xyz/" target="blank_">
                     <img src="images/fullscreen_flickpick.png" title="Our movie generator">
                 </a>
             </div>
-            <div class="jordakoes animation-settings animated fadeInUp">
+            <div class="jordakoes animated fadeInUp">
                 <a href="https://jordakoes.github.io/" target="blank_">
                     <img src="images/fullscreen_jordakoes.png" title="Jordi's socials">
                 </a>
             </div>
         </div>
 
-        <div id="process">
+        <div id="process" class="animatedParent">
                 <h2>How we work</h2>
-                <div class="discuss" data-aos="fade-right">
+                <div class="discuss wow fadeInLeft">
                     <h3 class="brand-color">Discuss</h3>
                     <p>Discussing different ideas <br> from both parties.</p>
                 </div>
-                <div class="design" data-aos="fade-left">
+                <div class="design wow fadeInRight">
                     <h3 class="brand-color">Design</h3>
                     <p>Discussing different ideas <br> from both parties.</p>
                 </div>
-                <div class="develop" data-aos="fade-right">
+                <div class="develop wow fadeInLeft">
                     <h3 class="brand-color">Develop</h3>
                     <p>Discussing different ideas <br> from both parties.</p>
                 </div>
-                <div class="deploy" data-aos="fade-left">
+                <div class="deploy wow fadeInRight">
                     <h3 class="brand-color">Deploy</h3>
                     <p>Discussing different ideas <br> from both parties.</p>
-                </div>
-                
+                </div>    
         </div>
 
         <footer>
@@ -93,9 +92,14 @@
     <!-- Personal js -->
     <script src="script.js"></script>
     <!-- AOS Scrolling -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
+
+    <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
