@@ -133,7 +133,7 @@ img:hover {
 }
 
 .brand-color {
-    color: #fc7422
+    color: #fc7422;
 }
 
 #process {
@@ -151,13 +151,8 @@ img:hover {
     text-align: end;
 }
 
-/* Typewriter styling */
-.Typewriter__wrapper{
-    font-weight: bold;
+#typewriter {
     color: #fc7422;
-}
-.Typewriter__cursor{
-    color: #202020;
 }
 
 /* Darkmode test */
