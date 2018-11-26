@@ -1,12 +1,19 @@
-// Typewriter
-new TypeIt('#typewriter', {
-  strings: ["Development", "Design", "Deployment"],
-  speed: 150,
-  breakLines: false,
-  autoStart: false,
+// TODO: Change id='app' to something descriptive
+// FIXME: Slows down over time..
+var app = document.getElementById('typewriter');
+
+var typewriter = new Typewriter(app, {
   loop: true
 });
 
+typewriter
+  .typeString('Design')
+  .deleteAll()
+  .typeString('Development')
+  .deleteAll()
+  .typeString('Deployment')
+  .start();
+    
 // Dark mode
 $("#switch").on("click", () => {
   if($("#switch").prop("checked")) {
