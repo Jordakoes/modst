@@ -140,7 +140,7 @@ img:hover {
     /* Spacing before the lets work together headline */
     margin-bottom: 15%;
 }
-
+b
 .discuss p, .design p, .develop p, .deploy p {
     margin-top: 0;
     /* TODO: Check if this needs vw */
@@ -151,13 +151,9 @@ img:hover {
     text-align: end;
 }
 
-/* Typewriter styling */
-.Typewriter__wrapper{
-    font-weight: bold;
+/* Text color of typewriter */
+#typewriter {
     color: #fc7422;
-}
-.Typewriter__cursor{
-    color: #202020;
 }
 
 /* Darkmode test */
