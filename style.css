@@ -133,9 +133,6 @@ img:hover {
     transition: .3s ease-in-out;
 }
 
-
-
-
 /* How we work section */
 .discuss h3, .design h3, .develop h3, .deploy h3 {
     margin-bottom: 0;
@@ -148,10 +145,13 @@ img:hover {
     color: #fc7422;
 }
 
-#process {
-    /* Spacing before the lets work together headline */
-    margin-bottom: 15%;
+.fix-pagin {
+    display: flex;
+    margin: 0;
 }
+#first-word {margin: 5% 0 0 0;
+}
+#second-word { margin: 5% 0 0 20px}
 
 .discuss p, .design p, .develop p, .deploy p {
     margin-top: 0;
@@ -159,9 +159,27 @@ img:hover {
     font-size: 30px;
 }
 
-.design, .deploy {
+/* .design, .deploy {
     text-align: end;
-}
+} */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-template-areas: 
+    "discuss design" 
+    "develop deploy";
+  }
+  
+  .discuss { grid-area: discuss; }
+  
+  .design { grid-area: design;}
+  
+  .develop { grid-area: develop; }
+  
+  .deploy { grid-area: deploy; }
 
 #typewriter {
     color: #fc7422;
@@ -238,9 +256,23 @@ img:hover {
     #portfolio {
         grid-template-columns: 1fr;
         grid-template-areas: 
+        "paperpool"
         "flickpick"
         "jordakoes";
     }
+
+    .process-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 40px;
+        grid-template-areas: 
+        "discuss"
+        "design" 
+        "develop" 
+        "deploy";
+    }
+
     h1 {
         font-size: 45px;
         margin: 0;
