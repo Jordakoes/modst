@@ -6,6 +6,7 @@ $("#switch").on("click", () => {
       $(".mail-btn").addClass("dark-btn");
       $(".jordakoes").addClass("dark-portfolio-bg");
       $(".flickpick").addClass("dark-portfolio-bg");
+      $(".paperpool").addClass("dark-portfolio-bg");
       $(".Typewriter__cursor").addClass("dark-cursor");
     } 
     else {
@@ -14,6 +15,7 @@ $("#switch").on("click", () => {
       $(".mail-btn").removeClass("dark-btn");
       $(".jordakoes").removeClass("dark-portfolio-bg");
       $(".flickpick").removeClass("dark-portfolio-bg");
+      $(".paperpool").removeClass("dark-portfolio-bg");
       $(".Typewriter__cursor").removeClass("dark-cursor");
     }
   })

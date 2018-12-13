@@ -86,15 +86,19 @@ img:hover {
 #portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: .5fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-items: stretch;
     align-items: stretch;
-    grid-template-areas: "flickpick jordakoes";
+    grid-template-areas: 
+    "flickpick jordakoes"
+    "paperpool paperpool";
 }
+
+
 /* Fix for centering the portfolio image in the wrapper */
-.jordakoes a, .flickpick a {
+.jordakoes a, .flickpick a, .paperpool a {
     display: flex;
     align-items: center;
     /* justify-content: start; */
@@ -103,6 +107,7 @@ img:hover {
     height: 100%;
 }
 
+/* TODO: Check the function of this class... */
 .test { 
     display: flex;
     align-items: center;
@@ -117,12 +122,19 @@ img:hover {
     grid-area: jordakoes;
 }
 
-.jordakoes, .flickpick {
-    padding: 4vw;
+.paperpool {
+    grid-area: paperpool;
+}
+
+.jordakoes, .flickpick, .paperpool {
+    padding: 3vw;
     background-color: #f2f2f2;
     border-radius: 8px;
     transition: .3s ease-in-out;
 }
+
+
+
 
 /* How we work section */
 .discuss h3, .design h3, .develop h3, .deploy h3 {
