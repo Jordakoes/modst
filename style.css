@@ -86,14 +86,14 @@ img:hover {
 #portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1fr;
+    grid-template-rows: 1fr .5fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-items: stretch;
     align-items: stretch;
     grid-template-areas: 
-    "flickpick jordakoes"
-    "paperpool paperpool";
+    "paperpool paperpool"
+    "flickpick jordakoes";
 }
 
 
