@@ -79,7 +79,8 @@ img {
     border-radius: 8px;
 }
 
-img:hover {
+/* Hover state of the img section */
+.jordakoes:hover img, .flickpick:hover img, .paperpool:hover img {
     opacity: .7;
 }
 
