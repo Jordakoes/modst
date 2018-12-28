@@ -8,6 +8,7 @@ $("#switch").on("click", () => {
       $(".flickpick").addClass("dark-portfolio-bg");
       $(".paperpool").addClass("dark-portfolio-bg");
       $(".Typewriter__cursor").addClass("dark-cursor");
+      $("a").addClass("dark-link");
     } 
     else {
       $("body").removeClass("dark");
@@ -17,5 +18,6 @@ $("#switch").on("click", () => {
       $(".flickpick").removeClass("dark-portfolio-bg");
       $(".paperpool").removeClass("dark-portfolio-bg");
       $(".Typewriter__cursor").removeClass("dark-cursor");
+      $("a").removeClass("dark-link");
     }
   })
