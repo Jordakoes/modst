@@ -1,5 +1,5 @@
 new TypeIt('#typewriter', {
-  strings: ["Design", "Development", "Deployment"],
+  strings: ["Ontwerp", "Ontwikkeling", "Oplevering"],
   speed: 178,
   breakLines: false,
   autoStart: false,
