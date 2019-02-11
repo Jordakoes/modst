@@ -81,7 +81,7 @@ img {
 }
 
 /* Hover state of the img section */
-.jordakoes:hover img, .flickpick:hover img, .paperpool:hover img {
+.veurletste:hover img, .flickpick:hover img, .paperpool:hover img {
     opacity: .7;
 }
 
@@ -94,13 +94,13 @@ img {
     justify-items: stretch;
     align-items: stretch;
     grid-template-areas: 
-    "paperpool paperpool"
-    "flickpick jordakoes";
+    "veurletste veurletste"
+    "flickpick paperpool";
 }
 
 
 /* Fix for centering the portfolio image in the wrapper */
-.jordakoes a, .flickpick a, .paperpool a {
+.veurletste a, .flickpick a, .paperpool a {
     display: flex;
     align-items: center;
     /* justify-content: start; */
@@ -120,15 +120,15 @@ img {
     grid-area: flickpick;
 }
 
-.jordakoes {
-    grid-area: jordakoes;
+.veurletste {
+    grid-area: veurletste;
 }
 
 .paperpool {
     grid-area: paperpool;
 }
 
-.jordakoes, .flickpick, .paperpool {
+.veurletste, .flickpick, .paperpool {
     padding: 3vw;
     background-color: #f2f2f2;
     border-radius: 8px;
@@ -268,9 +268,9 @@ img {
     #portfolio {
         grid-template-columns: 1fr;
         grid-template-areas: 
+        "veurletste"
         "paperpool"
-        "flickpick"
-        "jordakoes";
+        "flickpick";
     }
 
     .process-grid {
